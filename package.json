@@ -1,17 +1,21 @@
 {
   "name": "vue-core-lib-ui",
   "version": "0.0.1",
-  "author": "hankun",
+  "author": "hankun <ihankun@outlook.com>",
   "private": false,
   "main": "lib/vue-core-lib-ui.js",
   "lib": [
     "lib/**"
   ],
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-lib": "vue-cli-service build  --target lib --name vue-core-lib-ui --dist dist packages/index.ts "
+    "build-lib": "vue-cli-service build  --target lib --name vue-core-lib-ui --dest lib src/index.ts "
   },
   "dependencies": {
     "ant-design-vue": "^1.7.8",

@@ -26,4 +26,7 @@ export default class SvgIcon extends Vue {
 </script>
 
 <style scoped lang='scss'>
+.icon {
+  color: red
+}
 </style>
