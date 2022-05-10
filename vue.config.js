@@ -7,7 +7,7 @@ function resolve(dir) {
 module.exports = {
   pages: {
     index: {
-      entry: 'packages/index.ts'
+      entry: 'src/index.ts'
     }
   },
   chainWebpack(config) {

@@ -1,15 +1,22 @@
-import SvgIcon from '@/packages/svg-icon/svg-icon.vue'
+/** http */
+import http from 'components/http/http'
+
+/** layout */
 import DashboardFooter from '@/packages/layout/components/DashboardFooter.vue'
 import DashboardHeader from '@/packages/layout/components/DashboardHeader.vue'
 import DashboardSettingsDrawer from '@/packages/layout/components/DashboardSettingsDrawer.vue'
 import DashboardSidebar from '@/packages/layout/components/DashboardSidebar.vue'
+
+/** svg-icon */
+import SvgIcon from '@/packages/svg-icon/svg-icon.vue'
 
 const components = [
   SvgIcon,
   DashboardFooter,
   DashboardHeader,
   DashboardSettingsDrawer,
-  DashboardSidebar
+  DashboardSidebar,
+  http
 ]
 
 const install = (Vue: any) => {

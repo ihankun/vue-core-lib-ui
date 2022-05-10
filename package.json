@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "author": "hankun <ihankun@outlook.com>",
   "private": false,
-  "main": "lib/vue-core-lib-ui.js",
+  "keywords": ["vue", "hankun", "ihankun", "ui"],
+  "main": "vue-core-lib-ui.umd.min.js",
   "lib": [
     "lib/**"
   ],
