@@ -1,14 +1,14 @@
 /** http */
-import http from 'components/http/http'
+import http from '@/http/http'
 
 /** layout */
-import DashboardFooter from '@/packages/layout/components/DashboardFooter.vue'
-import DashboardHeader from '@/packages/layout/components/DashboardHeader.vue'
-import DashboardSettingsDrawer from '@/packages/layout/components/DashboardSettingsDrawer.vue'
-import DashboardSidebar from '@/packages/layout/components/DashboardSidebar.vue'
+import DashboardFooter from '@/layout/components/DashboardFooter.vue'
+import DashboardHeader from '@/layout/components/DashboardHeader.vue'
+import DashboardSettingsDrawer from '@/layout/components/DashboardSettingsDrawer.vue'
+import DashboardSidebar from '@/layout/components/DashboardSidebar.vue'
 
 /** svg-icon */
-import SvgIcon from '@/packages/svg-icon/svg-icon.vue'
+import SvgIcon from '@/svg-icon/svg-icon.vue'
 
 const components = [
   SvgIcon,

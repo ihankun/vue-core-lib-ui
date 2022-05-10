@@ -12,7 +12,7 @@
     theme="light"
     :style="{backgroundColor: 'transparent'}"
   >
-    <div class="brand"><img src="@/assets/logo.png" alt=""><span>管理系统</span></div>
+    <div class="brand"><img src="../assets/logo.png" alt=""><span>管理系统</span></div>
     <hr>
     <!-- 菜单 -->
     <a-menu theme="light" mode="inline" :data-source="menuList" >

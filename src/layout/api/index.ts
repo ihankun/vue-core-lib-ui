@@ -1,4 +1,4 @@
-import http from '@/packages/http/http';
+import http from '@/http/http';
 
 const findMenuList = () => {
   return http.post('/app/menu/findMenuList')
