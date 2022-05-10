@@ -33,6 +33,7 @@ if (typeof window !== 'undefined' && (window as any).Vue) {
 }
 
 export default {
+  version: '0.0.1',
   install,
   ...components
 }
