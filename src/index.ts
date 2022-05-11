@@ -1,39 +1,38 @@
 /** http */
-import http from '@/http/http'
+// import type { App } from 'vue';
+import App from 'vue';
+import * as components from './components';
 
-/** layout */
-import DashboardFooter from '@/layout/components/DashboardFooter.vue'
-import DashboardHeader from '@/layout/components/DashboardHeader.vue'
-import DashboardSettingsDrawer from '@/layout/components/DashboardSettingsDrawer.vue'
-import DashboardSidebar from '@/layout/components/DashboardSidebar.vue'
+export const install = function(app: App) {
+  // if ((install as any).installed) return;
+  // (install as any).installed = true;
 
-/** svg-icon */
-import SvgIcon from '@/svg-icon/svg-icon.vue'
-
-const components = [
-  SvgIcon,
-  DashboardFooter,
-  DashboardHeader,
-  DashboardSettingsDrawer,
-  DashboardSidebar,
-  http
-]
-
-const install = (Vue: any) => {
-  if ((install as any).installed) return;
-  (install as any).installed = true;
-
-  components.map(component => {
-    Vue.component(component.name, component);
+  // components.map(component => {
+  //   Vue.component(component.name, component);
+  // });
+  Object.keys(components).forEach(key => {
+    const component = (components as any)[key];
+    if (component.install) {
+      (app as any).use(component);
+    }
   });
+
+  // app.config.globalProperties.$message = components.message;
+  // app.config.globalProperties.$notification = components.notification;
+  // app.config.globalProperties.$info = components.Modal.info;
+  // app.config.globalProperties.$success = components.Modal.success;
+  // app.config.globalProperties.$error = components.Modal.error;
+  // app.config.globalProperties.$warning = components.Modal.warning;
+  // app.config.globalProperties.$confirm = components.Modal.confirm;
+  // app.config.globalProperties.$destroyAll = components.Modal.destroyAll;
+  return app;
 };
 
-if (typeof window !== 'undefined' && (window as any).Vue) {
-  install((window as any).Vue);
-}
+// if (typeof window !== 'undefined' && (window as any).Vue) {
+//   install((window as any).Vue);
+// }
 
 export default {
-  version: '0.0.1',
-  install,
-  ...components
+  install //,
+  // ...components
 }
