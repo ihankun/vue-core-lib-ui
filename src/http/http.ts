@@ -1,4 +1,8 @@
-import axios from 'axios';
+import App from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+App.use(VueAxios, axios);
 
 const http = axios.create({
   baseURL: process.env.VUE_APP_BASE_API,
