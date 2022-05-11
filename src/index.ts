@@ -17,14 +17,14 @@ export const install = function(app: App) {
     }
   });
 
-  // app.config.globalProperties.$message = components.message;
-  // app.config.globalProperties.$notification = components.notification;
-  // app.config.globalProperties.$info = components.Modal.info;
-  // app.config.globalProperties.$success = components.Modal.success;
-  // app.config.globalProperties.$error = components.Modal.error;
-  // app.config.globalProperties.$warning = components.Modal.warning;
-  // app.config.globalProperties.$confirm = components.Modal.confirm;
-  // app.config.globalProperties.$destroyAll = components.Modal.destroyAll;
+  // (app as any).config.globalProperties.$message = (components as any).message;
+  // (app as any).config.globalProperties.$notification = (components as any).notification;
+  // (app as any).config.globalProperties.$info = (components as any).Modal.info;
+  // (app as any).config.globalProperties.$success = (components as any).Modal.success;
+  // (app as any).config.globalProperties.$error = (components as any).Modal.error;
+  // (app as any).config.globalProperties.$warning = (components as any).Modal.warning;
+  // (app as any).config.globalProperties.$confirm = (components as any).Modal.confirm;
+  // (app as any).config.globalProperties.$destroyAll = (components as any).Modal.destroyAll;
   return app;
 };
 
