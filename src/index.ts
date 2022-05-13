@@ -1,4 +1,3 @@
-/** http */
 // import type { App } from 'vue';
 import App from 'vue';
 import * as components from './components';
@@ -33,6 +32,6 @@ export const install = function(app: App) {
 // }
 
 export default {
-  install //,
-  // ...components
+  install,
+  ...components
 }
