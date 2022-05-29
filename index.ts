@@ -1,4 +1,4 @@
 // module.exports = require('./src')
-import * as KunUI from './src'
+import * as KunUI from './lib'
 
 export default KunUI

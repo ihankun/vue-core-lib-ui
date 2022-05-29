@@ -16,7 +16,7 @@
       "webpack-env"
     ],
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["lib/*"]
     },
     "lib": [
       "esnext",
@@ -26,17 +26,20 @@
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx", 
-    "packages/**/*.ts",
-    "packages/**/*.tsx",
-    "packages/**/*.vue",
-    "compontents/**/*.ts",
-    "compontents/**/*.tsx",
-    "compontents/**/*.vue",  
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+    "lib/**/*.vue",
+    // "src/**/*.ts",
+    // "src/**/*.tsx",
+    // "src/**/*.vue",
+    // "tests/**/*.ts",
+    // "tests/**/*.tsx", 
+    // "packages/**/*.ts",
+    // "packages/**/*.tsx",
+    // "packages/**/*.vue",
+    // "compontents/**/*.ts",
+    // "compontents/**/*.tsx",
+    // "compontents/**/*.vue",  
   ],
   "exclude": [
     "node_modules"

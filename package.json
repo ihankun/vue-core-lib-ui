@@ -1,6 +1,6 @@
 {
   "name": "vue-core-lib-ui",
-  "version": "0.0.6",
+  "version": "0.0.10",
   "author": "hankun <ihankun@outlook.com>",
   "private": false,
   "keywords": [
@@ -9,7 +9,7 @@
     "ihankun",
     "ui"
   ],
-  "main": "lib/vue-core-lib-ui.umd.min.js",
+  "main": "lib/index.js",
   "lib": [
     "lib/**"
   ],
@@ -17,13 +17,14 @@
     "lib/*",
     "LICENSE",
     "*.md",
-    "package.json"
+    "package.json",
+    "dist/*"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-lib": "vue-cli-service build  --target lib --name vue-core-lib-ui --dest lib index.ts "
+    "build-lib": "vue-cli-service build  --target lib --name vue-core-lib-ui --dest dist index.ts "
   },
   "dependencies": {
     "ant-design-vue": "^1.7.8",
@@ -41,6 +42,7 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
     "@vue/cli-plugin-babel": "^4.5.0",

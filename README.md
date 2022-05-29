@@ -5,5 +5,7 @@
 npm install vue-core-lib-ui
 
 
+## 组件1：
+- layout 公共ui
 
 
