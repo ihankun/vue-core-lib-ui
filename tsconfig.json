@@ -26,9 +26,9 @@
     ]
   },
   "include": [
-    "lib/**/*.ts",
-    "lib/**/*.tsx",
-    "lib/**/*.vue",
+    // "lib/**/*.ts",
+    // "lib/**/*.tsx",
+    // "lib/**/*.vue",
     // "src/**/*.ts",
     // "src/**/*.tsx",
     // "src/**/*.vue",
@@ -37,9 +37,9 @@
     // "packages/**/*.ts",
     // "packages/**/*.tsx",
     // "packages/**/*.vue",
-    // "compontents/**/*.ts",
-    // "compontents/**/*.tsx",
-    // "compontents/**/*.vue",  
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "components/**/*.vue",  
   ],
   "exclude": [
     "node_modules"
