@@ -4,8 +4,11 @@
 ## 使用方法
 npm install vue-core-lib-ui
 
+import { Dashboard } from 'vue-core-lib-ui'
+
 
 ## 组件1：
 - layout 公共ui
+
 
 

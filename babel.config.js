@@ -15,10 +15,10 @@ const plugins = [
   '@babel/plugin-proposal-export-namespace-from',
   '@babel/plugin-proposal-class-properties',
   '@babel/plugin-syntax-dynamic-import',
-  '@babel/plugin-transform-runtime',
-  {
-    helpers: true
-  }
+  '@babel/plugin-transform-runtime'//,
+  // {
+  //   helpers: true
+  // }
 ]
 
 module.exports = {

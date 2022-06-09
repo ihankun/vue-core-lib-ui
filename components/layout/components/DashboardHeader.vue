@@ -55,6 +55,7 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
+import SvgIcon from 'components/svg-icon/svg-icon.vue'
 const top = 0
 const wrapper = document.body
 const searchLoading = false
@@ -85,7 +86,11 @@ const notificationsData = [
     time: '2 days ago'
   }
 ]
-@Component({})
+@Component({
+  components: {
+    'svg-icon': SvgIcon
+  }
+})
 export default class DashboardHeader extends Vue {
   @Prop({ type: Boolean, default: true }) navbarFixed !: boolean
   @Prop({ type: Boolean, default: true }) sidebarCollapsed !: boolean

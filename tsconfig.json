@@ -16,7 +16,7 @@
       "webpack-env"
     ],
     "paths": {
-      "@/*": ["lib/*"]
+      "@/*": ["components/*"]
     },
     "lib": [
       "esnext",
@@ -42,6 +42,8 @@
     "components/**/*.vue",  
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "lib",
+    "dist"
   ]
 }
