@@ -1,6 +1,6 @@
 import Http from './http'
 
-(Http as any).install = function(Vue: any) {
+Http.install = function(Vue) {
   Vue.component(Http.name, Http)
 }
 

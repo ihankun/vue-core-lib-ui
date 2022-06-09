@@ -50,10 +50,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(jsx?|babel|es6)$/,
+        test: [/\.(jsx?|babel|es6)$/, /\.m?js$/],
         include: process.cwd(),
         // exclude: config.jsexclude,
-        loader: 'babel-loader'
+        exclude: [/(node_modules|bower_components)/, path.resolve(__dirname, 'public/graph_hardcoded_config.js')],
+        loader: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: ['@babel/preset-env']
+        }
       },
       {
         test: /\.css$/,

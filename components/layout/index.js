@@ -12,17 +12,17 @@ const components = [
   Dashboard
 ]
 
-const install = (Vue: any) => {
-  if ((install as any).installed) return;
-  (install as any).installed = true;
+const install = (Vue) => {
+  if (install.installed) return;
+  install.installed = true;
 
   components.map(component => {
     Vue.component(component.name, component);
   });
 };
 
-if (typeof window !== 'undefined' && (window as any).Vue) {
-  install((window as any).Vue);
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
 }
 
 export {
