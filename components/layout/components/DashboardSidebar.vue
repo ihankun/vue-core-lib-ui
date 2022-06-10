@@ -30,32 +30,25 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator'
-import { menuApi } from '../api'
-// const menuList = []
+import { Component, Vue, Prop, Watch } from 'vue-property-decorator'
 @Component({})
 export default class DashboardSidebar extends Vue {
   @Prop({ type: String, default: 'primary' }) sidebarColor !: string
   @Prop({ type: String, default: 'light' }) sidebarTheme !: string
   @Prop({ type: Boolean, default: false }) sidebarCollapsed !: boolean
-  private menuList: any[] = []
+  @Prop({ type: Array }) menuList !: any[]
+  @Watch('menuList')
+  getMenuList(newData: any[]) {
+    console.log(newData);
+    this.menuList = newData
+  }
+
   mounted() {
-    console.log('mounted');
-    this.findMenuList()
+    //
   }
 
   created() {
-    console.log('created');
-    this.findMenuList()
-  }
-
-  findMenuList() {
-    menuApi.findMenuList().then((result: any) => {
-      this.menuList = result.list
-    }).catch((ex) => {
-      console.log(ex)
-      // this.$message.error(ex)
-    })
+    //
   }
 }
 </script>

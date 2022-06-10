@@ -6,6 +6,7 @@
         :sidebarColor="sidebarColor"
         :sidebarTheme="sidebarTheme"
         @toggleSidebar="toggleSidebar"
+        v-bind="$attrs"
       >
       </dashboard-sidebar>
       <a-layout>
