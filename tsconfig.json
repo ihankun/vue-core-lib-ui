@@ -39,7 +39,7 @@
     // "packages/**/*.vue",
     "components/**/*.ts",
     "components/**/*.tsx",
-    "components/**/*.vue",  
+    "components/**/*.vue"  
   ],
   "exclude": [
     "node_modules",

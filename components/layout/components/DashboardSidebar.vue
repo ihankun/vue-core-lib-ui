@@ -37,6 +37,7 @@ export default class DashboardSidebar extends Vue {
   @Prop({ type: String, default: 'light' }) sidebarTheme !: string
   @Prop({ type: Boolean, default: false }) sidebarCollapsed !: boolean
   @Prop({ type: Array }) menuList !: any[]
+
   @Watch('menuList')
   getMenuList(newData: any[]) {
     console.log(newData);

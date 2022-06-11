@@ -1,4 +1,4 @@
-export { default as Http } from './http';
+export { default as Http } from './axios';
 
 export {
   default as Layout,

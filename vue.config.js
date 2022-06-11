@@ -24,7 +24,7 @@ module.exports = {
     extract: true,
     loaderOptions: {
       sass: {
-        prependData: '@import "lib/style/index.scss";'
+        prependData: '@import "components/style/index.scss";'
       }
     }
   },
