@@ -25,4 +25,6 @@ export default class DashboardFooter extends Vue {
 </script>
 
 <style scoped lang='scss'>
+@import '../style/base/base.scss';
+@import '../style/_dashboard.scss';
 </style>

@@ -20,14 +20,14 @@ module.exports = {
   //     return args
   //   })
   // },
-  css: {
-    extract: true,
-    loaderOptions: {
-      sass: {
-        prependData: '@import "components/style/index.scss";'
-      }
-    }
-  },
+  // css: {
+  //   extract: true,
+  //   loaderOptions: {
+  //     sass: {
+  //       prependData: '@import "components/style/index.scss";'
+  //     }
+  //   }
+  // },
   configureWebpack: {
     performance: {
       hints: 'warning',

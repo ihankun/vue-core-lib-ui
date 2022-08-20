@@ -55,6 +55,8 @@ export default class DashboardSidebar extends Vue {
 </script>
 
 <style scoped lang='scss'>
+@import '../style/base/base.scss';
+@import '../style/_dashboard.scss';
 .ant-menu-item {
     margin-top: 15px;
 }

@@ -98,7 +98,9 @@ export default class DashboardLayout extends Vue {
 .content {
   min-height: 70vh;
 }
-// #layout-dashboard {
-//   max-height: 100vh;
-// }
 </style>
+<style src="../style/base/_override.scss" scoped></style>
+<style src="../style/base/_typography.scss" scoped></style>
+<style src="../style/base/_utilities.scss" scoped></style>
+<style src="../style/base/_variables.scss" scoped></style>
+<style src="../style/_dashboard.scss" scoped></style>

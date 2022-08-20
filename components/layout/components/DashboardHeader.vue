@@ -121,6 +121,8 @@ export default class DashboardHeader extends Vue {
 </script>
 
 <style scoped lang='scss'>
+@import '../style/base/base.scss';
+@import '../style/_dashboard.scss';
 .header-icon {
   width: 2vh;
 }
