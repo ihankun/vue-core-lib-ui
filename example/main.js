@@ -3,7 +3,7 @@ import App from './App.vue'
 import Antd from 'ant-design-vue'
 import VueRouter from 'vue-router'
 
-import Dashboard from '../components/layout/components/Dashboard.vue'
+import Dashboard from '../components/layout/layouts/Dashboard.vue'
 import SvgIcon from '../components/svg-icon/svg-icon.vue'
 
 // import '../components/style/index.scss'

@@ -1,8 +1,8 @@
-import Dashboard from './components/Dashboard.vue'
-import DashboardFooter from './components/DashboardFooter.vue'
-import DashboardHeader from './components/DashboardHeader.vue'
-import DashboardSettingsDrawer from './components/DashboardSettingsDrawer.vue'
-import DashboardSidebar from './components/DashboardSidebar.vue'
+import Dashboard from './layouts/Dashboard.vue'
+import DashboardFooter from './components/footers/DashboardFooter.vue'
+import DashboardHeader from './components/headers/DashboardHeader.vue'
+import DashboardSettingsDrawer from './components/siderbars/DashboardSettingsDrawer.vue'
+import DashboardSidebar from './components/siderbars/DashboardSidebar.vue'
 
 const components = [
   DashboardFooter,
